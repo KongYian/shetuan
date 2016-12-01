@@ -1,0 +1,17 @@
+[ 2016-12-01T00:02:45+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+

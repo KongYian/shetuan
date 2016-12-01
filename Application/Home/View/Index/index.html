@@ -6,7 +6,16 @@
 </head>
 
 <body>
+
+登录状态
+<?php if($_SESSION['userName']){echo 'hello!'.$_SESSION['userName'];}else{echo "请先登录";}?>
+
 <a href="{:U('Index/register')}"><p>用户注册</p></a>
+<a href="{:U('Index/login')}"><p>用户登录</p></a>
+<a href="{:U('Index/logout')}"><p>退出</p></a>
+
+
+<a href="{:U('Departapply/departapply')}"><p>申请成立新社团</p></a>
 
 </body>
 </html>

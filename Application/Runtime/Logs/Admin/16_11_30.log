@@ -1,0 +1,409 @@
+[ 2016-11-30T21:35:40+08:00 ] ::1 /shetuan/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-11-30T21:47:53+08:00 ] ::1 /shetuan/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2016-11-30T21:50:40+08:00 ] ::1 /shetuan/index.php/Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `st_admin_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_admin_info` WHERE `adminName` = 'qq' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-30T21:50:41+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-11-30T21:54:06+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-30T21:56:46+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-11-30T21:56:57+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-11-30T21:57:25+08:00 ] ::1 /shetuan/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-11-30T21:57:25+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-11-30T21:57:35+08:00 ] ::1 /shetuan/index.php/Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `st_admin_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_admin_info` WHERE `adminName` = 'qq' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-30T21:57:36+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-11-30T21:58:11+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-11-30T22:00:20+08:00 ] ::1 /shetuan/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-11-30T22:00:20+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002425s ]
+
+[ 2016-11-30T22:00:30+08:00 ] ::1 /shetuan/index.php/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2016-11-30T22:01:57+08:00 ] ::1 /shetuan/index.php/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+
+[ 2016-11-30T22:02:15+08:00 ] ::1 /shetuan/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-11-30T22:02:34+08:00 ] ::1 /shetuan/index.php/Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `st_admin_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_admin_info` WHERE `adminName` = 'qq' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-11-30T22:02:35+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2016-11-30T22:08:01+08:00 ] ::1 /shetuan/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2016-11-30T22:08:07+08:00 ] ::1 /shetuan/index.php/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-11-30T22:08:11+08:00 ] ::1 /shetuan/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-11-30T22:08:11+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2016-11-30T22:08:26+08:00 ] ::1 /shetuan/index.php/Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `st_admin_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_admin_info` WHERE `adminName` = 'qq' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-30T22:08:28+08:00 ] ::1 /shetuan/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
