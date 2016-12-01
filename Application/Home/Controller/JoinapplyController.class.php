@@ -31,20 +31,31 @@ class JoinapplyController extends CommonController{
     }
     /**
      * 提交用户申请社团
+     * 判断是否重复对一个社团重复申请
      */
     public function applysubmit(){
         if(IS_AJAX){
+                $applyobj = D('UserJoinApply');
                 $applyinfo = I('post.');
                 $data['userId'] = session('userId');
                 $data['departId'] = $applyinfo['departId'];
+            if($applyobj->where($data)->where('applyStatus=0')->find()){
+                $out['info'] = '你已经申请该社团了，请等待审核';
+            }else{
+                $departobj = D('DepartInfo');
+                $userobj = D('Userinfo');
+                $username = $userobj->field('userName')->where("userId={$data['userId']}")->find();
+                $departName = $departobj->field('departName')->where("departId={$data['departId']}")->find();
+                $data['userName'] = $username['username'];
+                $data['departName'] = $departName['departname'];
                 $data['applyReason'] = $applyinfo['applyReason'];
                 $data['applyTime'] = $applyinfo['applyTime'];
-                $applyobj = D('UserJoinApply');
                 if($applyobj->add($data)){
                     $out['info'] = '申请成功，等待审核';
                 }else{
                     $out['info'] = '提交失败，请重试';
                 }
+            }
             $this->ajaxReturn($out);
         }else{
             $this->error('非法操作');

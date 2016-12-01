@@ -34,11 +34,11 @@ class IndexController extends Controller{
                     if($adminInfo['adminpassword'] == $adminPassword){
                         session('adminName',$adminName);
                         session('adminId',$adminInfo['adminid']);
-                        if($adminInfo['roleid'] == 1){
-                            //roleid=1代表超级管理员
-                            $out['status'] = 1;
+                        if($adminInfo['roleid'] == 3){
+                            //roleid=3代表超级管理员
+                            $out['status'] = 3;
                         }else{
-                            //roleid=1代表普通部门管理员
+                            //roleid=2代表普通部门管理员
                             $out['status'] = 2;
                         }
                         $out['info'] = '登录成功';

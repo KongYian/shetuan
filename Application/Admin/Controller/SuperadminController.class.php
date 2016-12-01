@@ -98,4 +98,66 @@ class SuperadminController extends CommonController {
         $this->assign('res',$res);
         $this->display();
     }
+
+    /**
+     * 同意用户的入团申请
+     * 表:st_user_join_apply、st_user_depart
+     */
+    public function agreeuserapply(){
+        if(IS_AJAX){
+            $joinId = I('post.joinId');
+            $departid = I('post.departid');
+            $m = D('UserJoinApply');
+            $map['joinId'] = $joinId;
+            //1为同意社团成立
+            $data['applyStatus'] = 1;
+            if($m->where($map)->save($data)){
+                //更新申请信息成功的话，
+                //读取这条申请信息
+
+                $userdepartobj = D('UserDepart');
+                $info['userId']= session('userId');
+                $info['departId']=$departid;
+                $info['joinTime']= date('Y-m-d H:i:s',time());
+                if($userdepartobj->add($info)){
+                    $out['info'] = '处理成功，已经同意申请';
+                    $out['status'] = 1;
+                }else{
+                    $out['info'] = '处理失败';
+                    $out['status'] = 0;
+                }
+            }else{
+                $out['info'] = '处理失败';
+                $out['status'] = 0;
+            }
+            $this->ajaxReturn($out);
+        }else{
+            $this->error('非法操作');
+        }
+    }
+
+
+    /**
+     * 拒绝用户的入团申请
+     */
+    public function disagreeuserapply(){
+        if(IS_AJAX){
+            $joinId = I('post.joinId');
+            $m = D('UserJoinApply');
+            $map['joinId'] = $joinId;
+            //2为软删除
+            $data['applyStatus'] = 2;
+            if($m->where($map)->save($data)){
+                $out['info'] = '处理成功，已删除';
+                $out['status'] = 1;
+            }else{
+                $out['info'] = '处理失败';
+                $out['status'] = 0;
+            }
+            $this->ajaxReturn($out);
+        }else{
+            $this->error('非法操作');
+        }
+    }
+
 }

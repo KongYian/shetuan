@@ -2749,3 +2749,1107 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
 SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
 SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('19','2','rewrq','2016-12-01 18:07:28') [ RunTime:0.0013s ]
 
+[ 2016-12-01T22:12:27+08:00 ] ::1 /shetuan/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006632s ]
+
+[ 2016-12-01T22:12:27+08:00 ] ::1 /shetuan/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2016-12-01T22:12:40+08:00 ] ::1 /shetuan/index.php/Home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_user_baseinfo` WHERE `userName` = 'qq' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-01T22:12:41+08:00 ] ::1 /shetuan/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2016-12-01T22:12:47+08:00 ] ::1 /shetuan/index.php/Home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_user_baseinfo` WHERE `userName` = 'pp' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-12-01T22:12:49+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2016-12-01T22:12:54+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000243s ]
+
+[ 2016-12-01T22:13:08+08:00 ] ::1 /shetuan/index.php/Home/departapply/departapplycheck.html?$departid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `st_depart_apply` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_depart_apply` (`userId`,`departApplyName`,`departApplyIntroduction`,`departApplyReason`,`departApplyTime`,`departApplyStatus`) VALUES ('13','tao','111','111','2016-12-01 22:12:54','0') [ RunTime:0.0016s ]
+
+[ 2016-12-01T22:13:10+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2016-12-01T22:13:19+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2016-12-01T22:13:25+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'UserName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','diao','2016-12-01 22:13:19')
+ERR: 1364:Field 'UserName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','diao','2016-12-01 22:13:19')
+
+[ 2016-12-01T22:14:04+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-12-01T22:14:12+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0009s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','hi','2016-12-01 22:14:04')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','hi','2016-12-01 22:14:04')
+
+[ 2016-12-01T22:15:27+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-12-01T22:15:30+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','888','2016-12-01 22:15:27')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','888','2016-12-01 22:15:27')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:43) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:43) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:16:56+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2016-12-01T22:17:00+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0013s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Array to string conversion /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php 第 44 行.
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','444','2016-12-01 22:16:56')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','444','2016-12-01 22:16:56')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:17:28+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006474s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2016-12-01T22:17:30+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Array to string conversion /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php 第 44 行.
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','44','2016-12-01 22:17:28')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','44','2016-12-01 22:17:28')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:17:47+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006563s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2016-12-01T22:17:56+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php 第 44 行.
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','55','2016-12-01 22:17:47')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','55','2016-12-01 22:17:47')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:18:47+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2016-12-01T22:18:51+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php 第 44 行.
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','4','2016-12-01 22:18:47')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','4','2016-12-01 22:18:47')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:19:06+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-12-01T22:19:09+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0007s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','4','2016-12-01 22:19:06')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','4','2016-12-01 22:19:06')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:19:26+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2016-12-01T22:19:29+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0008s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','555','2016-12-01 22:19:26')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','555','2016-12-01 22:19:26')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tao/PhpSites/shetuan/Application/Home/Controller/JoinapplyController.class.php:44) /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-12-01T22:20:53+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2016-12-01T22:21:00+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+NOTIC: [8] Undefined offset: 0 /Users/tao/PhpSites/shetuan/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','helloworld','2016-12-01 22:20:53')
+ERR: 1364:Field 'userName' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `st_user_join_apply` (`userId`,`departId`,`applyReason`,`applyTime`) VALUES ('13','1','helloworld','2016-12-01 22:20:53')
+
+[ 2016-12-01T22:21:27+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 13 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2016-12-01T22:21:35+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0005s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('13','1','pp','电脑','hello world','2016-12-01 22:21:27') [ RunTime:0.0024s ]
+
+[ 2016-12-01T22:22:01+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0005s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('13','1','pp','电脑','666','2016-12-01 22:21:27') [ RunTime:0.0013s ]
+
+[ 2016-12-01T22:22:07+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('13','1','pp','电脑','999931231','2016-12-01 22:21:27') [ RunTime:0.0015s ]
+
+[ 2016-12-01T22:22:25+08:00 ] ::1 /shetuan/index.php/Home/Userinfo/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-12-01T22:22:33+08:00 ] ::1 /shetuan/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2016-12-01T22:22:33+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Undefined index: userName /Users/tao/PhpSites/shetuan/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 12 行.
+NOTIC: [8] Undefined index: userName /Users/tao/PhpSites/shetuan/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-12-01T22:22:35+08:00 ] ::1 /shetuan/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-12-01T22:22:48+08:00 ] ::1 /shetuan/index.php/Home/index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_user_baseinfo` (`userName`,`userPassword`,`userEmail`,`userCreateTime`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808','aaa','2016-12-01:22:22:48') [ RunTime:0.0016s ]
+SQL: INSERT INTO `st_user_baseinfo` (`userName`,`userPassword`,`userEmail`,`userCreateTime`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808','aaa','2016-12-01:22:22:48') [ RunTime:0.0020s ]
+
+[ 2016-12-01T22:22:50+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002407s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2016-12-01T22:22:54+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+
+[ 2016-12-01T22:23:02+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-12-01T22:23:12+08:00 ] ::1 /shetuan/index.php/Home/Userinfo/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-12-01T22:23:18+08:00 ] ::1 /shetuan/index.php/Home/Userinfo/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `st_user_baseinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_userinfo` (`userId`,`userGender`,`userAge`,`userTelphone`,`userQq`,`modifyTime`,`userName`,`userPassword`,`userEmail`) VALUES ('21','1','11','3123','3123','2016-12-01 22:23:12','aaa','47bce5c74f589f4867dbd57e9ca9f808','aaa') [ RunTime:0.0015s ]
+
+[ 2016-12-01T22:23:30+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-12-01T22:23:33+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-12-01T22:23:36+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0008s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=21 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('21','1','aaa','电脑','423424','2016-12-01 22:23:33') [ RunTime:0.0014s ]
+
+[ 2016-12-01T22:51:17+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2016-12-01T22:51:23+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-12-01T22:51:26+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0012s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=21 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('21','4','aaa','篮球','4234242','2016-12-01 22:51:23') [ RunTime:0.0014s ]
+
+[ 2016-12-01T22:51:31+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0005s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('21','4','aaa','篮球','4234242','2016-12-01 22:51:23') [ RunTime:0.0013s ]
+
+[ 2016-12-01T22:58:23+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-12-01T22:58:24+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-12-01T22:58:27+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_user_join_apply` WHERE `userId` = 21 AND `departId` = 1 AND ( applyStatus=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0008s ]
+SQL: SELECT `userName` FROM `st_userinfo` WHERE ( userId=21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `departName` FROM `st_depart_info` WHERE ( departId=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_user_join_apply` (`userId`,`departId`,`userName`,`departName`,`applyReason`,`applyTime`) VALUES ('21','1','aaa','电脑','555','2016-12-01 22:58:24') [ RunTime:0.0016s ]
+
+[ 2016-12-01T22:58:30+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_user_join_apply` WHERE `userId` = 21 AND `departId` = 1 AND ( applyStatus=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-01T22:58:33+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/applysubmit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `st_user_join_apply` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_user_join_apply` WHERE `userId` = 21 AND `departId` = 1 AND ( applyStatus=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-01T22:59:45+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-12-01T22:59:46+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 21 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2016-12-01T22:59:51+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+

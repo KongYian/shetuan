@@ -31,7 +31,7 @@
                     type:'post',
                     success:function (data) {
                         alert(data.info);
-                        if(data.status == 1){
+                        if(data.status == 3){
                             window.location.href="<?php echo U('Superadmin/index');?>";
                         }else if(data.status == 2){
                             window.location.href="<?php echo U('Departadmin/index');?>";

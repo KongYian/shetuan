@@ -13,4 +13,11 @@ class DepartadminController extends CommonController {
     public function index(){
         $this->display();
     }
+    public function subactivityapply(){
+        if(IS_AJAX){
+
+        }else{
+            $this->display();
+        }
+    }
 }

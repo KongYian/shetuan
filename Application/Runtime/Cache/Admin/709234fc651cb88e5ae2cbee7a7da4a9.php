@@ -9,5 +9,9 @@
     <?php if($_SESSION['adminName']){echo 'hello!'.$_SESSION['adminName'];}else{echo "请先登录";}?>
 <hr></hr>
     <a href="<?php echo U('Index/logout');?>"><p>退出登录</p></a>
+    <hr>
+    <a href="<?php echo U('Departadmin/subactivityapply');?>"><p>活动申请</p></a>
+
+
 </body>
 </html>

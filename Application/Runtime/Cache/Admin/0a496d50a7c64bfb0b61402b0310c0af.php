@@ -10,7 +10,7 @@
     <table border="2px solid">
         <tr>
         <td>申请人</td>
-        <td>申请社团名称</td>
+        <td>申请创建社团名称</td>
         <td>社团简介</td>
         <td>申请理由</td>
         <td>申请时间</td>
@@ -42,7 +42,6 @@
             var departApplyId = btn.parent().data('id');
             var param = {departApplyId:departApplyId};
             var btnclass = btn.attr('class');
-            alert(btnclass);
             //因为只需要applyid一个值，所以在这里进行区分
             if(btnclass == 'agreebtn'){
                 var url ="<?php echo U('Superadmin/agreeapply');?>";
@@ -65,7 +64,6 @@
                 }
             })
         })
-
     })
 </script>
 </html>
