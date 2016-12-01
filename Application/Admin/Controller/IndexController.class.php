@@ -13,10 +13,14 @@ class IndexController extends Controller{
         if(!session('adminId')){
             $this->display('login');
         }else{
-            $this->display();
+            $this->error('非法操作，请先登录');
         }
     }
 
+    /**
+     * 管理员登录
+     * 有两个入口，分别是超级管理员和部门管理员
+     */
     public function login(){
         if(IS_AJAX){
             $adminName = I('post.adminName');
@@ -29,9 +33,15 @@ class IndexController extends Controller{
                 if($adminInfo){
                     if($adminInfo['adminpassword'] == $adminPassword){
                         session('adminName',$adminName);
-                        session('adminId',$adminInfo['adminid']);                    $out['info'] = '密码错误';
+                        session('adminId',$adminInfo['adminid']);
+                        if($adminInfo['roleid'] == 1){
+                            //roleid=1代表超级管理员
+                            $out['status'] = 1;
+                        }else{
+                            //roleid=1代表普通部门管理员
+                            $out['status'] = 2;
+                        }
                         $out['info'] = '登录成功';
-                        $out['status'] = 1;
                     }else{
                         $out['info'] = '密码错误，请重新登录';
                         $out['status'] = 0;
@@ -43,13 +53,16 @@ class IndexController extends Controller{
             }
             $this->ajaxReturn($out);
         }
-        $this->error('非法操作');
+        $this->display();
     }
 
+    /**
+     * 管理员登出操作，清除session
+     */
     public function logout(){
         session('adminName',null);
         session('adminId',null);
-        $this->redirect('Index/index');
+        $this->redirect('Index/login');
     }
 
 }

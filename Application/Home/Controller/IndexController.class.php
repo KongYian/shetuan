@@ -6,8 +6,13 @@ class IndexController extends Controller {
 
     //展现网站（所有的消息展示）
     //用户注册
-    //管理员登录
+    //用户登录
     public function index(){
+
+        $departobj = D('DepartInfo');
+        $map['departStatus'] = 1;
+        $res = $departobj->where($map)->select();
+        $this->assign('res',$res);
         $this->display();
     }
 
@@ -26,8 +31,9 @@ class IndexController extends Controller {
                 $data['userCreateTime'] = date("Y-m-d:H:i:s",time());
                 $user = D('UserBaseinfo');
                 if($user->add($data)){
+                    $userid = $user->add($data);
                     session('userName',$userbaseinfo['userName']);
-                    session('userId',$userbaseinfo['userId']);
+                    session('userId',$userid);
                     $out = array('info'=>'注册成功');
                 }else{
                     $out = array('info'=>'注册失败');

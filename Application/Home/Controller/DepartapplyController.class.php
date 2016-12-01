@@ -11,7 +11,14 @@ use Think\Controller;
 
 class DepartapplyController extends CommonController{
     public function departapply(){
-        $this->display();
+        $userinfo = D('Userinfo');
+        $map['userId'] = session('userId');
+        $flag = $userinfo->where($map)->find();
+        if(!$flag){
+            $this->error('请先完善你的个人信息,再来申请');
+        }else{
+            $this->display();
+        }
     }
 
     /**

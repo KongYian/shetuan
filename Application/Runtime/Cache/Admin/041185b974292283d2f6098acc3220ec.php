@@ -32,7 +32,9 @@
                     success:function (data) {
                         alert(data.info);
                         if(data.status == 1){
-                            window.location.href="<?php echo U('Index/index');?>";
+                            window.location.href="<?php echo U('Superadmin/index');?>";
+                        }else if(data.status == 2){
+                            window.location.href="<?php echo U('Departadmin/index');?>";
                         }else{
                             window.location.href="<?php echo U('Index/login');?>";
                         }

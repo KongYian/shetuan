@@ -33,7 +33,7 @@
                 alert('每一项都必须填写');
             }else{
                 $.ajax({
-                    url:"<?php echo U('departapply/departapplycheck');?>",
+                    url:"<?php echo U('departapply/departapplycheck');?>?$departid=",
                     data:param,
                     dataType:'json',
                     type:'post',
