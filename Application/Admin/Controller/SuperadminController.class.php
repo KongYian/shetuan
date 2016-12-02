@@ -160,4 +160,27 @@ class SuperadminController extends CommonController {
         }
     }
 
+    /**
+     * 展示所有活动申请
+     */
+    public function showactivity(){
+        $this->display();
+    }
+
+    public function showinstitution(){
+        $this->display();
+    }
+
+    public function showattendace(){
+        $this->display();
+    }
+
+    public function showmessage(){
+        $this->display();
+    }
+
+    public function showuser(){
+        $this->display();
+    }
+
 }

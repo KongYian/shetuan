@@ -17,11 +17,11 @@
 
 <hr>
 <h1>社团事物管理</h1>
-<h2>活动管理</h2>
-<h2>制度管理</h2>
-<h2>值班管理</h2>
-<h2>消息管理</h2>
-<h2>会员管理</h2>
+<a href="<?php echo U('showactivity');?>"><h2>活动管理</h2></a>
+<a href="<?php echo U('showinstitution');?>"><h2>制度管理</h2></a>
+<a href="<?php echo U('showattendace');?>"><h2>值班管理</h2></a>
+<a href="<?php echo U('showmessage');?>"><h2>消息管理</h2></a>
+<a href="<?php echo U('showuser');?>"><h2>会员管理</h2></a>
 <hr>
 <h1>社团财务管理</h1>
 <h2>社团收支信息</h2>
