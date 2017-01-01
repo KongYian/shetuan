@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>活动管理页面</title>
-    <script src="__PUBLIC__/admin/js/jquery.min.js"></script>
+    <script src="/shetuan/Public/admin/js/jquery.min.js"></script>
 </head>
 <body>
 <h1>新活动审批页面</h1>
@@ -17,25 +17,23 @@
         <td>申请时间</td>
         <td>操作</td>
     </tr>
-    <foreach name="res" item="val" key="k">
-        <tr>
+    <?php if(is_array($res)): foreach($res as $k=>$val): ?><tr>
             <!--点击可以查看申请人的基本信息-->
-            <td>{$val.departname}</td>
-            <td>{$val.activityapplyname}</td>
-            <td>{$val.activitytime}</td>
-            <td>{$val.activityapplyaddr}</td>
-            <td>{$val.activityapplycontent}</td>
-            <td>{$val.activityapplytime}</td>
+            <td><?php echo ($val["departname"]); ?></td>
+            <td><?php echo ($val["activityapplyname"]); ?></td>
+            <td><?php echo ($val["activitytime"]); ?></td>
+            <td><?php echo ($val["activityapplyaddr"]); ?></td>
+            <td><?php echo ($val["activityapplycontent"]); ?></td>
+            <td><?php echo ($val["activityapplytime"]); ?></td>
             <!--同意和不同意两个操作
                 1、不论进行同意或者不同意操作，将【未处理】改为【已处理】
                 2、同意 status状态置为1 插入社团表
                 3、不同意 删除本次申请，做软删除
             -->
-            <td data-id="{$val.activityapplyid}">
+            <td data-id="<?php echo ($val["activityapplyid"]); ?>">
                 <button class="agreebtn">同意</button>|<button class="disagreebtn">不同意</button>
             </td>
-        </tr>
-    </foreach>
+        </tr><?php endforeach; endif; ?>
 </table>
 <hr>
 <h1>活动管理页面</h1>
@@ -50,21 +48,19 @@
         <td>创建时间</td>
         <td>操作</td>
     </tr>
-    <foreach name="info" item="value" key="k">
-        <tr>
-            <td>{$value.departid}</td>
-            <td>{$value.activityname}</td>
-            <td>{$value.activitytime}</td>
-            <td>{$value.activityaddr}</td>
-            <td>{$value.activitycontent}</td>
-            <td>{$value.createtime}</td>
-            <td data-id="{$val.activityid}">
+    <?php if(is_array($info)): foreach($info as $k=>$value): ?><tr>
+            <td><?php echo ($value["departid"]); ?></td>
+            <td><?php echo ($value["activityname"]); ?></td>
+            <td><?php echo ($value["activitytime"]); ?></td>
+            <td><?php echo ($value["activityaddr"]); ?></td>
+            <td><?php echo ($value["activitycontent"]); ?></td>
+            <td><?php echo ($value["createtime"]); ?></td>
+            <td data-id="<?php echo ($val["activityid"]); ?>">
                 <button class="activitydetails">查看详情</button>
                 |
                 <button class="activitydel">删除活动</button>
             </td>
-        </tr>
-    </foreach>
+        </tr><?php endforeach; endif; ?>
 </table>
 </body>
 <script>
@@ -77,12 +73,10 @@
             var btnclass = btn.attr('class');
             //因为只需要activityapplyid一个值，所以在这里进行区分
             if(btnclass == 'agreebtn'){
-                var url ="{:U('Superadmin/agreeactivityapply')}";
+                var url ="<?php echo U('Superadmin/agreeactivityapply');?>";
             }else if (btnclass == 'disagreebtn'){
-                var url ="{:U('Superadmin/disagreeactivityapply')}";
+                var url ="<?php echo U('Superadmin/disagreeactivityapply');?>";
             }else if (btnclass == 'activitydetails'){
-                param = {activityapplyid:activityapplyid};
-                var url ="{:U('Superadmin/activitydetails')}";
                 alert('yesy');
             }
             $.ajax({

@@ -1,0 +1,202 @@
+[ 2017-01-01T10:58:39+08:00 ] ::1 /shetuan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.048875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048930s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: userName /Users/tao/PhpSites/shetuan/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 12 行.
+NOTIC: [8] Undefined index: userName /Users/tao/PhpSites/shetuan/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002540s ]
+
+[ 2017-01-01T10:58:49+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-01-01T12:33:39+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-01-01T12:33:44+08:00 ] ::1 /shetuan/index.php/Home/Departapply/departapply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-01-01T12:34:28+08:00 ] ::1 /shetuan/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2017-01-01T12:34:56+08:00 ] ::1 /shetuan/index.php/Home/index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0012s ]
+SQL: INSERT INTO `st_user_baseinfo` (`userName`,`userPassword`,`userEmail`,`userCreateTime`) VALUES ('tao','698d51a19d8a121ce581499d7b701668','666@163.com','2017-01-01:12:34:56') [ RunTime:0.0246s ]
+SQL: INSERT INTO `st_user_baseinfo` (`userName`,`userPassword`,`userEmail`,`userCreateTime`) VALUES ('tao','698d51a19d8a121ce581499d7b701668','666@163.com','2017-01-01:12:34:56') [ RunTime:0.0036s ]
+
+[ 2017-01-01T12:34:57+08:00 ] ::1 /shetuan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `st_depart_info` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `st_depart_info` WHERE `departStatus` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-01-01T12:35:14+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-01-01T12:35:20+08:00 ] ::1 /shetuan/index.php/Home/Userinfo/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-01-01T12:35:29+08:00 ] ::1 /shetuan/index.php/Home/Userinfo/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 23 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_user_baseinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_user_baseinfo` WHERE `userId` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `st_userinfo` (`userId`,`userGender`,`userAge`,`userTelphone`,`userQq`,`modifyTime`,`userName`,`userPassword`,`userEmail`) VALUES ('23','1','36','111111','111','2017-01-01 12:35:20','tao','698d51a19d8a121ce581499d7b701668','666@163.com') [ RunTime:0.0015s ]
+
+[ 2017-01-01T12:35:41+08:00 ] ::1 /shetuan/index.php/Home/Joinapply/userjoinapply.html?departid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `st_userinfo` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_userinfo` WHERE `userId` = 23 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+

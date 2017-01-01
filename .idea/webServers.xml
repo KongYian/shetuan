@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="6247635c-e684-45bf-b671-a6e7d8616c6b" name="shetuan" url="http://localhost:80/shetuan">
+      <webServer id="ace6636a-6d6a-4685-9d2d-5c7104019e1b" name="shetuan" url="http://localhost:80/shetuan/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
     </option>

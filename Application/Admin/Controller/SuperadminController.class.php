@@ -16,7 +16,6 @@ class SuperadminController extends CommonController {
     public function index(){
         $this->display();
     }
-
     /**
      * 展示新社团的申请
      * st_depart_apply、st_depart_info
@@ -28,7 +27,6 @@ class SuperadminController extends CommonController {
         $this->assign('res',$res);
         $this->display();
     }
-
     /**
      * 同意新社团申请，
      */
@@ -64,7 +62,6 @@ class SuperadminController extends CommonController {
             $this->error('非法操作');
         }
     }
-
     /**
      * 不同意新社团申请，status改为2
      */
@@ -87,7 +84,6 @@ class SuperadminController extends CommonController {
             $this->error('非法操作');
         }
     }
-
     /**
      * 展示用户的所有申请
      * st_user_join_Apply、st_depart_Info、st_userinfo
@@ -98,7 +94,6 @@ class SuperadminController extends CommonController {
         $this->assign('res',$res);
         $this->display();
     }
-
     /**
      * 同意用户的入团申请
      * 表:st_user_join_apply、st_user_depart
@@ -135,8 +130,6 @@ class SuperadminController extends CommonController {
             $this->error('非法操作');
         }
     }
-
-
     /**
      * 拒绝用户的入团申请
      */
@@ -159,13 +152,92 @@ class SuperadminController extends CommonController {
             $this->error('非法操作');
         }
     }
-
     /**
-     * 展示所有活动申请
+     * 活动管理界面
      */
     public function showactivity(){
+        $applyobj = D('ActivityApply');
+        $res = $applyobj->join("LEFT JOIN __DEPART_INFO__ ON __ACTIVITY_APPLY__.departId = __DEPART_INFO__.departId")->field('activityapplyname,activitytime,activityapplyaddr,activityapplycontent,activityapplytime,departname,activityapplyid')->where('activityApplyStatus=0')->select();
+        $activityobj = D('ActivityInfo');
+        $info = $activityobj->where('status=0')->select();
+        $this->assign('info',$info);
+        $this->assign('res',$res);
         $this->display();
     }
+    /**
+     * Description:同意社团活动申请
+     */
+    public function agreeactivityapply(){
+        if(IS_AJAX){
+            $activityapplyid = I('post.activityapplyid');
+            $m = D('ActivityApply');
+            $map['activityApplyId'] = $activityapplyid;
+            //1为同意社团成立
+            $data['activityApplyStatus'] = 1;
+            //读取此条社团申请的全部信息
+
+            if($m->where($map)->save($data)){
+                //更新申请信息成功的话，
+                //读取这条申请信息
+                $activityinfo = $m->where($map)->find();
+                $activityobj = D('ActivityInfo');
+                $info['departId'] = $activityinfo['departid'];
+                $info['activityName'] = $activityinfo['activityapplyname'];
+                $info['activityTime'] = $activityinfo['activitytime'];
+                $info['activityAddr'] = $activityinfo['activityapplyaddr'];
+                $info['activityContent'] = $activityinfo['activityapplycontent'];
+                $info['createTime'] = date('Y-m-d H:i:s');
+                if($activityobj->add($info)){
+                    $out['info'] = '处理成功，已经同意申请';
+                    $out['status'] = 1;
+                }else{
+                    $out['info'] = '处理失败';
+                    $out['status'] = 0;
+                }
+            }else{
+                $out['info'] = '处理失败';
+                $out['status'] = 0;
+            }
+            $this->ajaxReturn($out);
+        }else{
+            $this->error('非法操作');
+        }
+    }
+    /**
+     * Description:拒绝社团的活动申请
+     */
+    public function disagreeactivityapply(){
+        if(IS_AJAX){
+            //2为软删除
+            $activityapplyid = I('post.activityapplyid');
+            $m = D('ActivityApply');
+            $map['activityApplyId'] = $activityapplyid;
+            //1为同意社团成立
+            $data['activityApplyStatus'] = 2;
+            //读取此条社团申请的全部信息
+
+            if($m->where($map)->save($data)){
+                $out['info'] = '处理成功，已删除';
+                $out['status'] = 1;
+            }else{
+                $out['info'] = '处理失败';
+                $out['status'] = 0;
+            }
+            $this->ajaxReturn($out);
+        }else{
+            $this->error('非法操作');
+        }
+    }
+
+    public function activitydetails(){
+        if(IS_AJAX){
+            $activityapplyid = I('post.activityapplyid');
+
+        }else{
+
+        }
+    }
+
 
     public function showinstitution(){
         $this->display();
