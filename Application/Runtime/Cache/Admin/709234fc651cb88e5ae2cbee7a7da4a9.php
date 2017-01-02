@@ -24,6 +24,8 @@
     <h2>社团财务管理</h2>
     <a href="<?php echo U('Goods/departgoods');?>">社团物品管理</a>
     <hr>
+    <a href="<?php echo U('Expense/departexpense');?>">社团收支管理</a>
+    <hr>
 
 
 </body>
