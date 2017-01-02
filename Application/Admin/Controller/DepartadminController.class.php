@@ -14,6 +14,7 @@ class DepartadminController extends CommonController {
         $this->display();
     }
 
+    //社团活动申请
     public function subactivityapply(){
         if(IS_AJAX){
             $data['activityApplyName'] = I('post.activityApplyName');
@@ -37,6 +38,10 @@ class DepartadminController extends CommonController {
             $this->display();
         }
     }
+
+    
+    
+
 
 
 }

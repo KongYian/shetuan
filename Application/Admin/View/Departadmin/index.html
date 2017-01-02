@@ -7,11 +7,23 @@
 <body>
     <h1>部门管理员管理首页</h1>
     <?php if($_SESSION['adminName']){echo 'hello!'.$_SESSION['adminName'];}else{echo "请先登录";}?>
-<hr></hr>
+    <hr>
     <a href="{:U('Index/logout')}"><p>退出登录</p></a>
     <hr>
+    <h2>社团事物管理</h2>
     <a href="{:U('Departadmin/subactivityapply')}"><p>活动申请</p></a>
-
+    <hr>
+    <a href="{:U('Member/departmember')}">会员管理</a>
+    <hr>
+    <a href="{:U('Message/departmessage')}">社团消息</a>
+    <hr>
+    <a href="{:U('Institution/departinstitution')}">社团制度</a>
+    <hr>
+    <a href="{:U('Attendance/departattendance')}">社团值班</a>
+    <hr>
+    <h2>社团财务管理</h2>
+    <a href="{:U('Goods/departgoods')}">社团物品管理</a>
+    <hr>
 
 
 </body>

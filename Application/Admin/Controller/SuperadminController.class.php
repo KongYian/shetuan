@@ -159,7 +159,8 @@ class SuperadminController extends CommonController {
         $applyobj = D('ActivityApply');
         $res = $applyobj->join("LEFT JOIN __DEPART_INFO__ ON __ACTIVITY_APPLY__.departId = __DEPART_INFO__.departId")->field('activityapplyname,activitytime,activityapplyaddr,activityapplycontent,activityapplytime,departname,activityapplyid')->where('activityApplyStatus=0')->select();
         $activityobj = D('ActivityInfo');
-        $info = $activityobj->where('status=0')->select();
+        $info = $activityobj->join("LEFT JOIN __DEPART_INFO__ ON __ACTIVITY_INFO__.departId = __DEPART_INFO__.departId")->field('activityname,activitytime,activityaddr,activitycontent,departname,createtime,activityid')->where('status=0')->select();
+//        $info = $activityobj->where('status=0')->select();
         $this->assign('info',$info);
         $this->assign('res',$res);
         $this->display();
@@ -187,9 +188,12 @@ class SuperadminController extends CommonController {
                 $info['activityAddr'] = $activityinfo['activityapplyaddr'];
                 $info['activityContent'] = $activityinfo['activityapplycontent'];
                 $info['createTime'] = date('Y-m-d H:i:s');
-                if($activityobj->add($info)){
+                $lastedid = $activityobj->add($info);
+                if($lastedid){
                     $out['info'] = '处理成功，已经同意申请';
                     $out['status'] = 1;
+                    $out['type'] = 1;
+                    $out['lastedid'] = $lastedid;
                 }else{
                     $out['info'] = '处理失败';
                     $out['status'] = 0;
@@ -219,6 +223,7 @@ class SuperadminController extends CommonController {
             if($m->where($map)->save($data)){
                 $out['info'] = '处理成功，已删除';
                 $out['status'] = 1;
+                $out['type'] = 0;
             }else{
                 $out['info'] = '处理失败';
                 $out['status'] = 0;
@@ -231,28 +236,49 @@ class SuperadminController extends CommonController {
 
     public function activitydetails(){
         if(IS_AJAX){
-            $activityapplyid = I('post.activityapplyid');
-
+            $activityid = I('post.activityid');
+            $m = D('activityInfo');
+            $map['activityid'] = $activityid;
+            $res= $m->where($map)->find();
+            if($res){
+                $out = [
+                    'info'=>json_encode($res),
+                    'status'=>1,
+                ];
+            }else{
+                $out = [
+                    'status'=>0,
+                    'info'=>'操作失败'
+                ];
+            }
+            $this->ajaxReturn($out);
         }else{
-
+            $this->error('非法操作');
         }
     }
 
-
-    public function showinstitution(){
-        $this->display();
-    }
-
-    public function showattendace(){
-        $this->display();
-    }
-
-    public function showmessage(){
-        $this->display();
-    }
-
-    public function showuser(){
-        $this->display();
+    public function activitydel(){
+        if(IS_AJAX){
+            $activityid = I('post.activityid');
+            $m = D('activityInfo');
+            $map['activityId'] = $activityid;
+            $data['status']=1;
+            $res= $m->where($map)->save($data);
+            if ($res){
+                $out = [
+                    'info'=>'删除成功',
+                    'status'=>1
+                ];
+            }else{
+                $out = [
+                  'info'=>'处理失败',
+                  'status'=>0
+                ];
+            }
+            $this->ajaxReturn($out);
+        }else{
+            $this->error('非法操作');
+        }
     }
 
 }

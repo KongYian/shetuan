@@ -30,8 +30,8 @@ class IndexController extends Controller {
                 $data['userEmail'] = $userbaseinfo['userEmail'];
                 $data['userCreateTime'] = date("Y-m-d:H:i:s",time());
                 $user = D('UserBaseinfo');
-                if($user->add($data)){
-                    $userid = $user->add($data);
+                $userid = $user->add($data);
+                if($userid){
                     session('userName',$userbaseinfo['userName']);
                     session('userId',$userid);
                     $out = array('info'=>'注册成功');

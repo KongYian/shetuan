@@ -34,6 +34,7 @@ class IndexController extends Controller{
                     if($adminInfo['adminpassword'] == $adminPassword){
                         session('adminName',$adminName);
                         session('adminId',$adminInfo['adminid']);
+                        session('adminDepartId',$adminInfo['departid']);
                         if($adminInfo['roleid'] == 3){
                             //roleid=3代表超级管理员
                             $out['status'] = 3;
