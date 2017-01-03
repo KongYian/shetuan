@@ -11,7 +11,8 @@ class IndexController extends Controller {
 
         $departobj = D('DepartInfo');
         $map['departStatus'] = 1;
-        $res = $departobj->where($map)->select();
+        $res = $departobj->where($map)->limit(3)->select();
+        //制作分页
         $this->assign('res',$res);
         $this->display();
     }

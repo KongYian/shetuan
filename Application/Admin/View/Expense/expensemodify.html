@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>收支修改</title>
-    <script src="__PUBLIC__/admin/js/jquery.min.js"></script>
-</head>
-<body>
-    <h1>收支修改</h1>
-    <table border="2px solid">
-        收支类型
-        <input type="radio" name="expensemethod" value="1"> 收入
-        <input type="radio" name="expensemethod" value="2"> 支出
-        <hr>
-        金额<input type="text" id="expensecharge" value="{$res['expensecharge']}">
-        <hr>
-        时间<input type="text" id="expensetime"  value="{$res['expensetime']}">
-        <hr>
-        笔记<input type="text" id="expensenote"  value="{$res['expensenote']}">
-    </table>
-    <button id="subbtn" type="button" data-id="{$res['expenseid']}">确认提交</button>
+<include file="Public/header" title="物品记录修改" keywords="社团管理系统，常州大学，课程设计" />
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">收支类型</label>
+                            <div class="col-sm-10">
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" value="1" name="expensemethod" >
+                                    收入</label>
+                                </div>
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" value="2" name="expensemethod" >
+                                    支出</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">金额</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="expensecharge" value="{$res['expensecharge']}">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="expensetime" value="{$res['expensetime']}">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">笔记</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="expensenote" value="{$res['expensenote']}">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <button type="button" class="btn btn-w-m btn-info" id="subbtn">确认提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
+<include file="Public/footer"/>
 <script>
     $('#subbtn').on('click',function () {
         var btn = $(this);
@@ -37,7 +72,6 @@
             expensetime:expensetime
         };
         console.log(param);
-
         if(!expensemethod || !expensecharge || !expensenote || !expensetime){
             alert('每一项都必须填写');
             return;

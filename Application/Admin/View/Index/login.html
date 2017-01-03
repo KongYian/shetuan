@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>管理员后台登录界面</title>
-    <script src="__PUBLIC__/home/js/jquery.min.js"></script>
-</head>
-<body>
+<html>
+<!-- Mirrored from www.zi-han.net/theme/hplus/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:23 GMT -->
+<include file="Public/header" title="常州大学社团管理系统登录" keywords="社团管理，登录，常州大学" />
+<body class="gray-bg">
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
 
-用户名<input type="text" name="adminName" id="adminName">
-<hr>
-密码<input type="password" name="adminPassword" id="adminPassword">
-<hr>
-<button  type="button" id="subbtn">登录</button>
-<button  type="button" id="modbtn">忘记密码</button>
+            <h1 class="logo-name">Yian</h1>
+
+        </div>
+        <h3>社团管理系统登录</h3>
+
+        <div class="m-t" role="form">
+            <div class="form-group">
+                <input type="text" class="form-control" name="adminName" id="adminName" placeholder="用户名" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="adminPassword" id="adminPassword" placeholder="密码" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b" id="subbtn">登 录</button>
+        </div>
+    </div>
+</div>
+
 </body>
+
+<include file="Public/footer"/>
+<!-- Mirrored from www.zi-han.net/theme/hplus/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:23 GMT -->
 <script>
     $(function () {
         $('#subbtn').on('click',function () {

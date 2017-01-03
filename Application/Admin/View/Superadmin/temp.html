@@ -1,0 +1,38 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox-content">
+
+                <table class="table table-striped table-bordered table-hover dataTables-example" id="manageactivity">
+                    <thead>
+                    <tr>
+                        <td>社团ID</td>
+                        <td>活动名称</td>
+                        <td>活动时间</td>
+                        <td>活动地点</td>
+                        <td>活动内容</td>
+                        <td>创建时间</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="info" item="value" key="k">
+                        <tr>
+                            <td>{$value.departname}</td>
+                            <td>{$value.activityname}</td>
+                            <td>{$value.activitytime}</td>
+                            <td>{$value.activityaddr}</td>
+                            <td>{$value.activitycontent}</td>
+                            <td>{$value.createtime}</td>
+                            <td data-id="{$value.activityid}">
+                                <button class="btn btn-sm btn-info activitydetails">查看详情</button>
+                                <button class="btn btn-sm btn-danger activitydel">删除活动</button>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

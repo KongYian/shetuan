@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<include file="Public/header" title="会员管理" keywords="社团管理系统，常州大学，课程设计" />
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+                <div class="ibox-content">
+
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                        <tr>
+                            <th>会员姓名</th>
+                            <th>联系方式</th>
+                            <th>入会时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="res" item="v" key="k">
+                            <tr class="gradeX">
+                                <td>{$v.username}</td>
+                                <td>{$v.usertelphone}</td>
+                                <td>{$v.jointime}</td>
+                                <td data-id="{$v.id}">
+                                    <a href="{:U('Member/memberdetails',array('uid'=>$v['uid']))}">
+                                    <button type="button" class="btn btn-sm btn-info" id="subbtn">详情</button></a>
+                                    |
+                                    <button type="button" class="btn btn-sm btn-danger memberdel">删除</button>
+                                </td>
+                            </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+<body>
+    <h1>会员管理</h1>
+    <table border="2px solid">
+        <tr>
+            <td>会员姓名</td>
+            <td>联系方式</td>
+            <td>入会时间</td>
+            <td>操作</td>
+        </tr>
+        <foreach name="res" item="v" key="k">
+        <tr>
+            <td>{$v.username}</td>
+            <td>{$v.usertelphone}</td>
+            <td>{$v.jointime}</td>
+            <td data-id="{$v.id}">
+                <a href="{:U('Member/memberdetails',array('uid'=>$v['uid']))}"><button>详情</button></a>
+                <button class="memberdel">删除</button>
+            </td>
+        </tr>
+        </foreach>
+    </table>
+</body>
+
+<script src="__PUBLIC__/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="__PUBLIC__/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="__PUBLIC__/js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="__PUBLIC__/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="__PUBLIC__/js/content.min.js?v=1.0.0"></script>
+<script>
+    $(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("http://www.zi-han.net/theme/example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+
+<script>
+    $('.memberdel').on('click',function () {
+        var btn = $(this);
+        var memberid = btn.parent().data('id');
+        var param = {memberid: memberid};
+        var url = "{:U('Member/memberdel')}";
+        $.ajax({
+            url: url,
+            data: param,
+            dataType: 'json',
+            type: 'post',
+            success: function (data) {
+                var dotr = btn.closest('tr');
+                alert(data.info);
+                if (data.status == 1) {
+                    dotr.remove();
+                }
+            },
+            error: function () {
+                alert('操作失败');
+            }
+        })
+    })
+</script>
+</html>

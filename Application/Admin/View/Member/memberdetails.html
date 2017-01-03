@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>会员详情</title>
-</head>
-<body>
-    <h1>会员详情</h1>
-    <table border="2px solid">
-        <tr>
-            <td>用户姓名</td>
-            <td>电子邮箱</td>
-            <td>性别</td>
-            <td>年龄</td>
-            <td>电话号码</td>
-            <td>QQ</td>
-        </tr>
-        <tr>
-            <td>{$res['username']}</td>
-            <td>{$res['useremail']}</td>
-            <td>
-                <?php
-                    if($res['usergender'] == 1){
+<include file="Public/header" title="会员详情" keywords="社团管理，首页，常州大学" />
+<style>
+    span{
+        font-size: 1.5em;
+    }
+</style>
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="row animated fadeInRight">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>个人资料</h5>
+                </div>
+                <div>
+                    <div class="ibox-content no-padding border-left-right">
+                        <img alt="image" class="img-responsive" src="__PUBLIC__/img/profile_big.jpg">
+                    </div>
+                    <div class="ibox-content profile-content">
+                        <span>姓名:</span><span><strong>{$res['username']}</strong></span><br>
+                        <span>性别:</span><span><strong>
+                        <?php
+                        if($res['usergender'] == 1){
                         echo '男';
-                    }else{
-                        echo '女';
-                    }
-                    ?>
-            </td>
-            <td>{$res['userage']}</td>
-            <td>{$res['usertelphone']}</td>
-            <td>{$res['userqq']}</td>
-        </tr>
-    </table>
+                        }else{
+                            echo '女';
+                        }
+                        ?>
+                        </strong></span><br>
+                        <span>年龄:</span><span><strong>{$res['userage']}</strong></span><br>
+                        <span>邮箱:</span><span><strong>{$res['useremail']}</strong></span><br>
+                        <span>手机:</span><span><strong>{$res['usertelphone']}</strong></span><br>
+                        <span>QQ:</span><span><strong>{$res['userqq']}</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

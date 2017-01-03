@@ -176,7 +176,6 @@ class SuperadminController extends CommonController {
             //1为同意社团成立
             $data['activityApplyStatus'] = 1;
             //读取此条社团申请的全部信息
-
             if($m->where($map)->save($data)){
                 //更新申请信息成功的话，
                 //读取这条申请信息

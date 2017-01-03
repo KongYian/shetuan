@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>活动管理页面</title>
-    <script src="__PUBLIC__/admin/js/jquery.min.js"></script>
-</head>
-<body>
-<h1>新活动审批页面</h1>
-<table border="2px solid" id="newactivity">
-    <tr>
-        <td>申请社团名称</td>
-        <td>活动名称</td>
-        <td>活动时间</td>
-        <td>活动地点</td>
-        <td>活动内容</td>
-        <td>申请时间</td>
-        <td>操作</td>
-    </tr>
-    <foreach name="res" item="val" key="k">
-        <tr>
-            <!--点击可以查看申请人的基本信息-->
-            <td>{$val.departname}</td>
-            <td>{$val.activityapplyname}</td>
-            <td>{$val.activitytime}</td>
-            <td>{$val.activityapplyaddr}</td>
-            <td>{$val.activityapplycontent}</td>
-            <td>{$val.activityapplytime|date="Y-m-d H:i:s",###}</td>
-            <!--同意和不同意两个操作
-                1、不论进行同意或者不同意操作，将【未处理】改为【已处理】
-                2、同意 status状态置为1 插入社团表
-                3、不同意 删除本次申请，做软删除
-            -->
-            <td data-id="{$val.activityapplyid}">
-                <button class="agreebtn">同意</button>|<button class="disagreebtn">不同意</button>
-            </td>
-        </tr>
-    </foreach>
-</table>
-<hr>
-<h1>活动管理页面</h1>
-<!--列出所有status = 0 的活动-->
-<table border="2px solid" id="manageactivity">
-    <tr>
-        <td>社团ID</td>
-        <td>活动名称</td>
-        <td>活动时间</td>
-        <td>活动地点</td>
-        <td>活动内容</td>
-        <td>创建时间</td>
-        <td>操作</td>
-    </tr>
-    <foreach name="info" item="value" key="k">
-        <tr>
-            <td>{$value.departname}</td>
-            <td>{$value.activityname}</td>
-            <td>{$value.activitytime}</td>
-            <td>{$value.activityaddr}</td>
-            <td>{$value.activitycontent}</td>
-            <td>{$value.createtime}</td>
-            <td data-id="{$value.activityid}">
-                <button class="activitydetails">查看详情</button>
-                |
-                <button class="activitydel">删除活动</button>
-            </td>
-        </tr>
-    </foreach>
-</table>
+<include file="Public/header" title="活动管理" keywords="社团管理系统，常州大学，课程设计" />
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox-content">
+
+                <table class="table table-striped table-bordered table-hover dataTables-example" id="newactivity">
+                    <thead>
+                    <tr>
+                        <td>申请社团名称</td>
+                        <td>活动名称</td>
+                        <td>活动时间</td>
+                        <td>活动地点</td>
+                        <td>活动内容</td>
+                        <td>申请时间</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="res" item="val" key="k">
+                        <tr>
+                            <td>{$val.departname}</td>
+                            <td>{$val.activityapplyname}</td>
+                            <td>{$val.activitytime}</td>
+                            <td>{$val.activityapplyaddr}</td>
+                            <td>{$val.activityapplycontent}</td>
+                            <td>{$val.activityapplytime|date="Y-m-d H:i:s",###}</td>
+                            <td data-id="{$val.activityapplyid}">
+                                <button class="btn btn-sm btn-info " title="agreebtn">同意</button>
+                                <button class="btn btn-sm btn-danger " title="disagreebtn">不同意</button>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox-content">
+
+                <table class="table table-striped table-bordered table-hover dataTables-example" id="manageactivity">
+                    <thead>
+                    <tr id="target">
+                        <td>社团ID</td>
+                        <td>活动名称</td>
+                        <td>活动时间</td>
+                        <td>活动地点</td>
+                        <td>活动内容</td>
+                        <td>创建时间</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="info" item="value" key="k">
+                        <tr>
+                            <td>{$value.departname}</td>
+                            <td>{$value.activityname}</td>
+                            <td>{$value.activitytime}</td>
+                            <td>{$value.activityaddr}</td>
+                            <td>{$value.activitycontent}</td>
+                            <td>{$value.createtime}</td>
+                            <td data-id="{$value.activityid}">
+                                <button class="btn btn-sm btn-info " title="activitydetails">查看详情</button>
+                                <button class="btn btn-sm btn-danger " title="activitydel">删除活动</button>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </body>
+
+<script src="__PUBLIC__/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="__PUBLIC__/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="__PUBLIC__/js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="__PUBLIC__/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="__PUBLIC__/js/content.min.js?v=1.0.0"></script>
+<!--<script>-->
+    <!--$(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("http://www.zi-han.net/theme/example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};-->
+<!--</script>-->
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 <script>
     $(function () {
         $('#newactivity button').on('click',function () {
             var btn = $(this);
-            var dotr = btn.closest('tr');
+            var dotr = {};
+            dotr = btn.closest('tr');
             var activityapplyid = btn.parent().data('id');
             var param = {activityapplyid:activityapplyid};
-            var btnclass = btn.attr('class');
+//            console.log(param)
+//            var tt =dotr[0].innerHTML;
+//            console.log(tt)
+//            var target = $('#target');
+//            console.log(target);
+
+            var btnclass = btn.attr('title');
             //因为只需要activityapplyid一个值，所以在这里进行区分
             if(btnclass == 'agreebtn'){
                 var url ="{:U('Superadmin/agreeactivityapply')}";
@@ -93,9 +125,17 @@
                         if(data.type == 1){
                             //同意申请
                             var $lastedid = data.lastedid;
-                            var dotd = btn.closest('tr');
+//                            var dotd = btn.closest('tr');
 //                           在此处把同意的新申请动态添加
-                            console.log(dotd);
+//                            console.log(dotd);
+//                            target.prepend(dotr);
+//                            var tt = dotr[0];
+//                            typeof(tt);
+//                            var test = $(tt);
+//                            console.log(test);
+//                            dotr[0]['innerText'] = tt;
+//                            console.log(dotr);
+//                            console.log(tt);
                             $('#manageactivity').append(dotr);
                         }
                     }
@@ -110,7 +150,7 @@
             var btn = $(this);
             var activityid = btn.parent().data('id');
             var param = {activityid:activityid};
-            var btnclass = btn.attr('class');
+            var btnclass = btn.attr('title');
             //因为只需要activityapplyid一个值，所以在这里进行区分
             if(btnclass == 'activitydetails'){
                 var url ="{:U('Superadmin/activitydetails')}";
