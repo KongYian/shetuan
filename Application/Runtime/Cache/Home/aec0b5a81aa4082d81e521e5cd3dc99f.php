@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <title>用户基本信息填写页面</title>
     <meta name="author" content="DeathGhost" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/magic-check.css" />
+    <link rel="stylesheet" type="text/css" href="/shetuan/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/shetuan/Public/css/magic-check.css" />
     <style>
         body{height:100%;background:#16a085;overflow:hidden;}
         canvas{z-index:-1;position:absolute;}
@@ -25,9 +25,9 @@
         }
 
     </style>
-    <script src="__PUBLIC__/admin/js/jquery.min.js"></script>
-    <script src="__PUBLIC__/js/verificationNumbers.js" ></script>
-    <script src="__PUBLIC__/js/Particleground.js"></script>
+    <script src="/shetuan/Public/admin/js/jquery.min.js"></script>
+    <script src="/shetuan/Public/js/verificationNumbers.js" ></script>
+    <script src="/shetuan/Public/js/Particleground.js"></script>
 </head>
 <body>
 
@@ -57,7 +57,7 @@
     <dd class="pwd_icon">
         <input type="text" placeholder="QQ" class="login_txtbx" id="userQq"/>
     </dd>
-    <input type="hidden" value="{$Think.const.NOW_TIME|date='Y-m-d H:i:s',###}">
+    <input type="hidden" value="<?php echo (date('Y-m-d H:i:s',NOW_TIME)); ?>">
     <dd>
         <input type="button" value="确认提交" class="submit_btn" id="subbtn"/>
     </dd>
@@ -92,7 +92,7 @@
                 alert('每一项都必须填写');
             }else{
                 $.ajax({
-                    url:"{:U('Userinfo/myinfo')}",
+                    url:"<?php echo U('Userinfo/myinfo');?>",
                     data:param,
                     dataType:'json',
                     type:'post',
@@ -102,7 +102,7 @@
                         }else{
                             alert(data.info);
                         }
-                        window.location.href= "{:U('Home/index/index')}"
+                        window.location.href= "<?php echo U('Home/index/index');?>"
                     },
                     error:function () {
                         alert('操作失败');

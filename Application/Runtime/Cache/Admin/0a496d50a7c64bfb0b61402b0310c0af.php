@@ -1,6 +1,24 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
-<include file="Public/header" title="新用户入会申请" keywords="社团管理系统，常州大学，课程设计" />
+
+<head>
+<title>新用户入会申请</title>
+<meta name="keywords" content="社团管理系统，常州大学，课程设计" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="本系统基于TP3.2开发，感谢开源">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="/shetuan/Public/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+<link href="/shetuan/Public/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+<link href="/shetuan/Public/css/animate.min.css" rel="stylesheet">
+<link href="/shetuan/Public/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+<link href="/shetuan/Public/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<![endif]-->
+</head>
 
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
@@ -20,25 +38,23 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <foreach name="res" item="val" key="k">
-                        <tr>
+                    <?php if(is_array($res)): foreach($res as $k=>$val): ?><tr>
                             <!--点击可以查看申请人的基本信息-->
-                            <td>{$val.userid}</td>
-                            <td>{$val.departapplyname}</td>
-                            <td>{$val.departapplyintroduction}</td>
-                            <td>{$val.departapplyreason}</td>
-                            <td>{$val.departapplytime}</td>
+                            <td><?php echo ($val["userid"]); ?></td>
+                            <td><?php echo ($val["departapplyname"]); ?></td>
+                            <td><?php echo ($val["departapplyintroduction"]); ?></td>
+                            <td><?php echo ($val["departapplyreason"]); ?></td>
+                            <td><?php echo ($val["departapplytime"]); ?></td>
                             <!--同意和不同意两个操作
                                 1、不论进行同意或者不同意操作，将【未处理】改为【已处理】
                                 2、同意 status状态置为1 插入社团表
                                 3、不同意 删除本次申请，做软删除
                             -->
-                            <td data-id="{$val.departapplyid}">
+                            <td data-id="<?php echo ($val["departapplyid"]); ?>">
                                 <button class="btn btn-sm btn-info " title="agreebtn">同意</button>
                                 <button class="btn btn-sm btn-danger " title="disagreebtn">不同意</button>
                             </td>
-                        </tr>
-                    </foreach>
+                        </tr><?php endforeach; endif; ?>
                     </tbody>
                 </table>
             </div>
@@ -49,12 +65,12 @@
 </body>
 
 
-<script src="__PUBLIC__/js/jquery.min.js?v=2.1.4"></script>
-<script src="__PUBLIC__/js/bootstrap.min.js?v=3.3.6"></script>
-<script src="__PUBLIC__/js/plugins/jeditable/jquery.jeditable.js"></script>
-<script src="__PUBLIC__/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="__PUBLIC__/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-<script src="__PUBLIC__/js/content.min.js?v=1.0.0"></script>
+<script src="/shetuan/Public/js/jquery.min.js?v=2.1.4"></script>
+<script src="/shetuan/Public/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/shetuan/Public/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="/shetuan/Public/js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="/shetuan/Public/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="/shetuan/Public/js/content.min.js?v=1.0.0"></script>
 <!--<script>-->
     <!--$(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("http://www.zi-han.net/theme/example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};-->
 <!--</script>-->
@@ -69,9 +85,9 @@
             var btnclass = btn.attr('title');
             //因为只需要applyid一个值，所以在这里进行区分
             if(btnclass == 'agreebtn'){
-                var url ="{:U('Superadmin/agreeapply')}";
+                var url ="<?php echo U('Superadmin/agreeapply');?>";
             }else if (btnclass == 'disagreebtn'){
-                var url ="{:U('Superadmin/disagreeapply')}";
+                var url ="<?php echo U('Superadmin/disagreeapply');?>";
             }
             $.ajax({
                 url: url,

@@ -1,4 +1,4 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 
 
 <!DOCTYPE html>
@@ -7,15 +7,15 @@
     <meta charset="utf-8"/>
     <title>用户申请入会</title>
     <meta name="author" content="DeathGhost" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/magic-check.css" />
+    <link rel="stylesheet" type="text/css" href="/shetuan/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/shetuan/Public/css/magic-check.css" />
     <style>
         body{height:100%;background:#16a085;overflow:hidden;}
         canvas{z-index:-1;position:absolute;}
     </style>
-    <script src="__PUBLIC__/admin/js/jquery.min.js"></script>
-    <script src="__PUBLIC__/js/verificationNumbers.js" ></script>
-    <script src="__PUBLIC__/js/Particleground.js"></script>
+    <script src="/shetuan/Public/admin/js/jquery.min.js"></script>
+    <script src="/shetuan/Public/js/verificationNumbers.js" ></script>
+    <script src="/shetuan/Public/js/Particleground.js"></script>
 </head>
 <body>
 
@@ -27,13 +27,13 @@
         <strong>申请入会</strong>
         <em>Welcome```</em>
     </dt>
-    <input type="hidden" value="{$departid}">
+    <input type="hidden" value="<?php echo ($departid); ?>">
 
 
     <dd class="pwd_icon">
         <input type="text" placeholder="申请理由" class="login_txtbx" id="applyReason" />
     </dd>
-    <input type="hidden" value="{$Think.const.NOW_TIME|date='Y-m-d H:i:s',###}">
+    <input type="hidden" value="<?php echo (date('Y-m-d H:i:s',NOW_TIME)); ?>">
     <dd>
         <input type="button" value="确认提交" class="submit_btn" id="subbtn"/>
     </dd>
@@ -66,13 +66,13 @@
                 alert('每一项都必须填写');
             }else{
                 $.ajax({
-                    url:"{:U('Joinapply/applysubmit')}",
+                    url:"<?php echo U('Joinapply/applysubmit');?>",
                     data:param,
                     dataType:'json',
                     type:'post',
                     success:function (data) {
                         alert(data.info);
-                        window.location.href= "{:U('Home/index/index')}"
+                        window.location.href= "<?php echo U('Home/index/index');?>"
 
                     },
                     error:function () {

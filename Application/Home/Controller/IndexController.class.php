@@ -8,13 +8,34 @@ class IndexController extends Controller {
     //用户注册
     //用户登录
     public function index(){
-
         $departobj = D('DepartInfo');
         $map['departStatus'] = 1;
-        $res = $departobj->where($map)->limit(3)->select();
-        //制作分页
-        $this->assign('res',$res);
+        $total = $departobj->where($map)->select();
+        $page = new PageController(count($total),3);
+        $res = $departobj->page(I('get.page','1'))->limit(3)->order('departId desc')->select();
+        $pageinfo = $page->pageinfo();
+
+        $aObj = D('ActivityInfo');
+        $amap['Status'] = 1;
+        $atotal = $aObj->where($amap)->select();
+        $apage = new PageController(count($atotal),3);
+        $ares = $aObj->page(I('get.page','1'))->limit(3)->order('activityId desc')->select();
+        $apageinfo = $apage->pageinfo();
+
+        $array = array(
+            'res'=>$res,
+            'ares'=>$ares,
+            'pageinfo'=>$pageinfo,
+            'apageinfo'=>$apageinfo,
+        );
+        $this->assign($array);
+
+
+//        $res = $departobj->where($map)->limit(3)->select();
+//        //制作分页
+//        $this->assign('res',$res);
         $this->display();
+
     }
 
     /**

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,13 +7,13 @@
     <title>首页</title>
     <!-- load stylesheets -->
     <!--<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400">    &lt;!&ndash; Google web font "Open Sans" &ndash;&gt;-->
-    <link rel="stylesheet" href="__PUBLIC__/font-awesome-4.6.3/css/font-awesome.min.css">            <!-- Font awesome -->
-    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">                                  <!-- Bootstrap style -->
-    <link rel="stylesheet" href="__PUBLIC__/css/hi.css">                                  <!-- Bootstrap style -->
-    <link rel="stylesheet" href="__PUBLIC__/css/hero-slider-style.css">                              <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
-    <link rel="stylesheet" href="__PUBLIC__/css/magnific-popup.css">                                 <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="/shetuan/Public/font-awesome-4.6.3/css/font-awesome.min.css">            <!-- Font awesome -->
+    <link rel="stylesheet" href="/shetuan/Public/css/bootstrap.min.css">                                  <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/shetuan/Public/css/hi.css">                                  <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/shetuan/Public/css/hero-slider-style.css">                              <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+    <link rel="stylesheet" href="/shetuan/Public/css/magnific-popup.css">                                 <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
 
-    <link rel="stylesheet" href="__PUBLIC__/css/templatemo-style.css">                               <!-- Templatemo style -->
+    <link rel="stylesheet" href="/shetuan/Public/css/templatemo-style.css">                               <!-- Templatemo style -->
     <style>
         b{
             color: lightskyblue;
@@ -87,19 +87,17 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="tm-2-col-container">
-                                <foreach name="res" item="val" key="k">
-                                    <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
-                                        <h2 class="tm-text-title">社团名称: {$val.departname}</h2>
-                                        <p class="tm-text"> 社团简介：{$val.departintroduction}</p>
-                                        <a href="{:U('Joinapply/userjoinapply')}?departid={$val.departid}">
-                                            <button data-id="{$val.departid}">申请加入</button></a>
-                                    </div>
-                                </foreach>
+                                <?php if(is_array($res)): foreach($res as $k=>$val): ?><div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
+                                        <h2 class="tm-text-title">社团名称: <?php echo ($val["departname"]); ?></h2>
+                                        <p class="tm-text"> 社团简介：<?php echo ($val["departintroduction"]); ?></p>
+                                        <a href="<?php echo U('Joinapply/userjoinapply');?>?departid=<?php echo ($val["departid"]); ?>">
+                                            <button data-id="<?php echo ($val["departid"]); ?>">申请加入</button></a>
+                                    </div><?php endforeach; endif; ?>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12" style="padding-top: 20px" id="info">
-                                <{$pageinfo}>
+                                <<?php echo ($pageinfo); ?>>
                                 </div>
                         </div>
                     </div>
@@ -139,33 +137,33 @@
 
                     <div class="row tm-img-gallery">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-01.jpg">
-                                <img src="__PUBLIC__/img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-01.jpg">
+                                <img src="/shetuan/Public/img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-02.jpg">
-                                <img src="__PUBLIC__/img/tm-img-02-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-02.jpg">
+                                <img src="/shetuan/Public/img/tm-img-02-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-03.jpg">
-                                <img src="__PUBLIC__/img/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-03.jpg">
+                                <img src="/shetuan/Public/img/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-04.jpg">
-                                <img src="__PUBLIC__/img/tm-img-04-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-04.jpg">
+                                <img src="/shetuan/Public/img/tm-img-04-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-05.jpg">
-                                <img src="__PUBLIC__/img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-05.jpg">
+                                <img src="/shetuan/Public/img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <a href="__PUBLIC__/img/tm-img-06.jpg">
-                                <img src="__PUBLIC__/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                            <a href="/shetuan/Public/img/tm-img-06.jpg">
+                                <img src="/shetuan/Public/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
                             </a>
                         </div>
                     </div>
@@ -183,19 +181,17 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="tm-2-col-container">
-                                <foreach name="ares" item="val" key="k">
-                                    <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
-                                        <h2 class="tm-text-title">活动名称: {$val.activityname}</h2>
-                                        <p class="tm-text"> 活动内容：{$val.activitycontent}</p>
-                                        <p class="tm-text"> 活动地点：{$val.activityaddr}</p>
-                                        <p class="tm-text"> 活动时间：{$val.activitytime}</p>
-                                    </div>
-                                </foreach>
+                                <?php if(is_array($ares)): foreach($ares as $k=>$val): ?><div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
+                                        <h2 class="tm-text-title">活动名称: <?php echo ($val["activityname"]); ?></h2>
+                                        <p class="tm-text"> 活动内容：<?php echo ($val["activitycontent"]); ?></p>
+                                        <p class="tm-text"> 活动地点：<?php echo ($val["activityaddr"]); ?></p>
+                                        <p class="tm-text"> 活动时间：<?php echo ($val["activitytime"]); ?></p>
+                                    </div><?php endforeach; endif; ?>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12" style="padding-top: 20px" id="info">
-                                <{$pageinfo}>
+                                <<?php echo ($pageinfo); ?>>
                             </div>
                         </div>
                     </div>
@@ -216,16 +212,16 @@
 
                                 <div class="col-xs-12 col-sm-6 ">
                                     <div class="form-group">
-                                        <a href="{:U('home/index/register')}"><input type="button"   class="form-control" value="注册" /></a>
+                                        <a href="<?php echo U('home/index/register');?>"><input type="button"   class="form-control" value="注册" /></a>
                                     </div>
                                     <div class="form-group">
-                                        <a href="{:U('home/index/login')}"><input type="button"   class="form-control"  value="登录"/></a>
+                                        <a href="<?php echo U('home/index/login');?>"><input type="button"   class="form-control"  value="登录"/></a>
                                     </div>
                                     <div class="form-group">
-                                        <a href="{:U('home/userinfo/myinfo')}"><input type="button"   class="form-control"  value="个人信息完善"/></a>
+                                        <a href="<?php echo U('home/userinfo/myinfo');?>"><input type="button"   class="form-control"  value="个人信息完善"/></a>
                                     </div>
                                     <div class="form-group">
-                                        <a href="{:U('home/departapply/departapply')}"><input type="button"   class="form-control"  value="社团创建申请"/></a>
+                                        <a href="<?php echo U('home/departapply/departapply');?>"><input type="button"   class="form-control"  value="社团创建申请"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -253,13 +249,13 @@
 
 <!-- load JS files -->
 
-<script src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
-<script src="__PUBLIC__/js/hi.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
-<script src="__PUBLIC__/js/hii.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
-<script src="__PUBLIC__/ja/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
-<script src="__PUBLIC__/js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
-<script src="__PUBLIC__/js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
-<script src="__PUBLIC__/js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+<script src="/shetuan/Public/js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+<script src="/shetuan/Public/js/hi.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+<script src="/shetuan/Public/js/hii.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+<script src="/shetuan/Public/ja/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
+<script src="/shetuan/Public/js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+<script src="/shetuan/Public/js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+<script src="/shetuan/Public/js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
 
 <script>
 
